@@ -1,0 +1,1 @@
+start cmd /k "cd C:\Users\lbroley\PycharmProjects\Sample360 Cleardowns && python S360_Cleardown.py"

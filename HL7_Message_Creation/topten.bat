@@ -1,0 +1,1 @@
+start cmd /k "cd C:\Users\lbroley\PycharmProjects\HL7_Message_Creation\data && python topten.py"

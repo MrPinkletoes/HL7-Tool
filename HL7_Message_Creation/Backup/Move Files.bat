@@ -1,0 +1,1 @@
+move /y *.xml C:\Workspace\Import_S360
