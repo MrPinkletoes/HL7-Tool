@@ -25,7 +25,7 @@ class Window(Frame):
             print("Cancelled")
 
         def cdown():
-            os.system("python C:\\Users\\lbroley\\PycharmProjects\\Sample360 Cleardowns\S360_Cleardown.py ")
+            os.system("python S360_Cleardown.py ")
 
         def close():
             root.destroy()
