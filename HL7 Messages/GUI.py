@@ -25,7 +25,7 @@ class Window(Frame):
             print("Cancelled")
 
         def cdown():
-            os.system("python S360_Cleardown.py ")
+            os.system("python C:\\Users\\lbroley\\PycharmProjects\\Sample360 Cleardowns\S360_Cleardown.py ")
 
         def close():
             root.destroy()
@@ -36,10 +36,29 @@ class Window(Frame):
         cdown = Button(root, text="Clear database", command=cdown)
         close = Button(root, text="Close", command=close)
 
-        cdown.place(x=163, y=570)
-        confirm.place(x=50, y=570)
-        cancel.place(x=110, y=570)
-        close.place(x=258, y=570)
+        confirm.place(x=169, y=570)
+        cancel.place(x=229, y=570)
+        cdown.place(x=282, y=570)
+        close.place(x=377, y=570)
+
+        # Entries
+        L1 = Label(text="How many files would you like?:")
+        L1.place(x=10, y=20)
+        E1 = Entry(bd=2)
+        E1.place(x=185, y=18)
+        Lb1 = Listbox(root)
+        Lb1.insert(1, "Python")
+        Lb1.insert(2, "Perl")
+        Lb1.insert(3, "C")
+        Lb1.insert(4, "PHP")
+        Lb1.insert(5, "JSP")
+        Lb1.insert(6, "Ruby")
+        Lb1.place(x=10, y=50)
+        CheckVar1 = IntVar()
+        C1 = Checkbutton(text="Muti request", variable=CheckVar1, onvalue=1, offvalue=0, height=5, width=5)
+        C1.place(x=50, y=50)
+
+
 
 
 root = Tk()
